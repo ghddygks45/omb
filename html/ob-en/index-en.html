@@ -1,0 +1,338 @@
+<!doctype html>
+<!--[if IE 9 ]><html lang="ko" class="ie9"><![endif]-->
+<!--[if (gt IE 9)]><!--><html lang="en"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1, minimum-scale=1, width=device-width">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../../images/ob-en/favicon.ico" media="all">
+    <link rel="stylesheet" href="../../css/ob-common/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../css/ob-common/swiper.min.css">
+    <link rel="stylesheet" href="../../css/ob-en/common.css">
+    <link rel="stylesheet" href="../../css/ob-en/main.css">
+    <script src="../../js/ob-common/jquery-1.12.4.min.js"></script>
+    <script src="../../js/ob-common/jquery-ui.min.js"></script>
+    <!--[if IE 9 ]>
+    <script src="../../resources/ob-resources/placeholder.min.js"></script>
+    <![endif]-->
+    <script src="../../resources/ob-resources/datepicker-ko.js"></script>
+    <script src="../../js/ob-common/resize.js"></script>
+    <script src="../../js/ob-en/ui.js"></script>
+    <script src="../../js/ob-common/include.js"></script>
+    <script src="../../resources/ob-resources/swiper.min.js"></script>
+	<title>외국인투자옴부즈만</title>
+    <!-- 퍼블용, 임시 -->
+    <script>
+       function fn_pub(){
+            currentPage(5)
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- skip_navigation : [퍼블용 임시 include] -->
+    <div w3-include-html="inc/skip_nav.html"></div>
+    <!-- //개발 언어로 skip_navigation.html을 include 해주세요. --> 
+
+    <!-- 레이어팝업 -->
+    <div class="main-layer-popup" id="popup1" style="top: 200px; left: 300px; display: block;" tabindex="0">
+        <div class="layer-popup">
+            <div class="top">
+                코로나바이러스감염증-19
+                <a href="#n" onclick="closePopup(this);return false;"><span class="blind">CLOSE</span></a>
+            </div>
+            <div class="pop-content">
+                <a href="#n"><img src="../../images/ob-en/main/popup_dummy.png" alt=""></a>
+                <div class="btm">
+                    <a href="#n" onclick="PopupCloseDay(this);return false;">Close this window today</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 메인 레이어팝업 (오늘 하루 보지 않기 체크된 팝업 히든 처리)
+        $('.main-layer-popup').each(function () {
+            var pop = $(this);
+            if (popupGetCookie($(this).attr("id"))) { // '오늘 하루 보지 않기 체크'를 했다면
+                pop.hide();
+            } else {
+                pop.show();
+            }
+        });
+
+        // 레이어팝업 (오늘 하루 보이지 않기)
+        function PopupCloseDay(winName) {
+            var id = $(winName).parents('.main-layer-popup').attr('id');
+            mainPopupSetCookie(id, "done", 1);
+            $('#' + id).hide();
+        }
+
+        // 레이어 팝업 닫기
+        function closePopup(obj) {
+            $(obj).parents('.main-layer-popup').hide();
+        }
+
+        // 레이어 팝업 쿠키 찾기
+        function popupGetCookie(name) {
+            var nameOfCookie = name + "=";
+            var x = 0;
+            while (x <= document.cookie.length) {
+                var y = (x + nameOfCookie.length);
+                if (document.cookie.substring(x, y) == nameOfCookie) {
+                    if ((endOfCookie = document.cookie.indexOf(";", y)) == -1)
+                        endOfCookie = document.cookie.length;
+                    return unescape(document.cookie.substring(y, endOfCookie));
+                }
+                x = document.cookie.indexOf(" ", x) + 1;
+                if (x == 0)
+                    break;
+            }
+            return "";
+        }
+
+        // 레이어 팝업 쿠키 생성
+        function mainPopupSetCookie(name, value, expiredays) {
+            var todayDate = new Date();
+            todayDate = new Date(parseInt(todayDate.getTime() / 86400000) * 86400000 + 54000000);
+            if (todayDate > new Date()) {
+                expiredays = expiredays - 1;
+            }
+            todayDate.setDate(todayDate.getDate() + expiredays);
+            document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+        }
+
+    </script>
+    <!-- // 레이어팝업 -->
+    
+    <div id="wrap">
+        <!-- header : [퍼블용 임시 include] -->
+		<div w3-include-html="inc/header.html"></div>
+		<!-- //개발 언어로 header.html을 include 해주세요. --> 
+    
+        <div id="content" class="main">
+            
+            <div class="sec01">
+                <div class="swiper-container visual_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#n">
+                                <img src="../../images/ob-en/main/vi_slide01.jpg" class="pc_content" alt="">
+                                <img src="../../images/ob-en/main/vi_slide01_m.jpg" class="m_content" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#n">
+                                <img src="../../images/ob-en/main/vi_slide02.jpg" class="pc_content" alt="">
+                                <img src="../../images/ob-en/main/vi_slide02_m.jpg" class="m_content" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#n">
+                                <img src="../../images/ob-en/main/vi_slide01.jpg" class="pc_content" alt="">
+                                <img src="../../images/ob-en/main/vi_slide01_m.jpg" class="m_content" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#n">
+                                <img src="../../images/ob-en/main/vi_slide02.jpg" class="pc_content" alt="">
+                                <img src="../../images/ob-en/main/vi_slide02_m.jpg" class="m_content" alt="">
+                            </a>
+                        </div>
+                    </div>
+                   
+                    <div class="btn_wrap">
+                        <div class="swiper-pagination"></div>
+                        <button class="btn_stop" onclick="SliderStop(this);"><span class="blind">정지</span></button>
+                        <button class="btn_play" onclick="SliderPlay(this);"><span class="blind">시작</span></button>
+                    </div>
+
+                    <script>
+                        var mySwiper = new Swiper('.visual_slide', {
+                                slidesPerView: 1,
+                                speed: 1000,
+                                fadeEffect: {
+                                    crossFade: true
+                                },
+                                pagination: {
+                                    el: ".swiper-pagination",
+                                    clickable: true,
+                                },
+                                autoplay: {
+                                    delay: 3000,
+                                },
+                                observer: true,
+                                observeParents: true,
+                            })
+
+                            function SliderStop(obj) {
+                                $(obj).hide().next().css('display', 'inline-block');
+                                mySwiper.autoplay.stop();
+                                $('.sec01 .btn_play').attr("tabindex", -1).focus();
+                            }
+
+                            function SliderPlay(obj) {
+                                $(obj).hide().prev().css('display', 'inline-block');
+                                mySwiper.autoplay.start();
+                                $('.sec01 .btn_stop').attr("tabindex", -1).focus();
+                            }
+                    </script>
+
+                    <div class="direct_link_wrwp">
+                        <div class="direct_link_box">
+                            <strong class="tit">
+                                <span class="t01">Apply for Grievance Consultation</span>
+                                <span class="t02">Our doors are always open.</span>
+                            </strong>
+                            <div class="msg">
+                                Home doctors are<br> ready to listen<br> to your concerns! 
+                            </div>
+                        </div>
+                        <a href="①GrievanceConsultation_OnlineApplication.html" class="link_area">
+                            <span class="dr_link">More</span>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="quick_menu_wrap">
+                    <div class="quick_menu">
+                        <div class="top">
+                            <ul>
+                                <li><a href="②AboutUs_Ombudsman'sMessage.html">Ombudsman's Message</a></li>
+                                <li><a href="②AboutUs_WhoWeAre.html">Who We Are</a></li>
+                                <li><a href="②AboutUs_OrganizationalChart.html">Organizational Chart</a></li>
+                                <li><a href="④BulletinBoard_Newsletter_SubscribetoNewsletter.html">Subscribe to Newsletter</a></li>
+                                <li><a href="②AboutUs_Location.html">Location</a></li>
+                            </ul>
+                        </div>
+                        <div class="bottom">
+                            <h2 class="tit">Notice</h2>
+                            <ul>
+                                <li>
+                                    <a href="#n">[COVID-19] 사회적 거리두기 체계 개편(안) 공개 [COVID-19] 사회적 거리두기 체계 개편(안) 공개 [COVID-19] 사회적 거리두기 체계 개편(안) 공개</a>
+                                    <span class="date">2021.06.18</span>
+                                </li>
+                                <li>
+                                    <a href="#n">[COVID-19] 사회적 거리두기 체계 개편(안) 공개</a>
+                                    <span class="date">2021.06.18</span>
+                                </li>
+                            </ul>
+                            <a href="④BulletinBoard_Notice_list.html" class="link_more"><span class="blind">More</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec02">
+                <div class="sec_inner">
+                    <div class="top">
+                        <h2 class="tit">Major Businesses</h2>
+                        <!-- 퍼블리싱 수정 -->
+                        <div class="servi_wrap">
+                            <div class="servi_box">
+                                <strong>Resolved Cases<span>How things are improved</span></strong>
+                                Resolved grievances in 22 areas
+                            </div>
+                            <div class="servi_box">
+                                <strong>Legislative Information<span>Regulatory information</span></strong>
+                                Recent legislative information for foreign investors at a glance
+                            </div>
+                        </div>
+                        <!-- // 퍼블리싱 수정 -->
+                    </div>
+                    <div class="bottom">
+                        <h2 class="tit">Highlights and Archieve</h2>
+                        <div class="contents_wrap">
+                            <div class="contents01">
+                                <div class="pic_box">
+                                    <a href="④BulletinBoard_Highlights_list.html">
+                                        <img src="../../images/ob-en/main/img_dummy.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="tit_box">
+                                    <a href="④BulletinBoard_Highlights_list.html" class="tt">2021년 외국인투자 기업 간담회 개최현황 2021년 외국인투자 기업 간담회 개최현황</a>
+                                    <span class="date">2020.12.23</span>
+                                </div>
+                            </div>
+                            <div class="contents02">
+                                <div class="pic_box">
+                                    <a href="④BulletinBoard_Archive_list.html">
+                                        <img src="../../images/ob-en/main/img_dummy02_m.jpg" alt="" class="m_content">
+                                        <img src="../../images/ob-en/main/img_dummy02.jpg" alt="" class="pc_content">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec03">
+                <div class="sec_inner">
+                    <div class="swiper-container related_slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#n">
+                                    <img src="../../images/ob-en/main/rel_slide01.jpg" class="pc_content" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#n">
+                                    <img src="../../images/ob-en/main/rel_slide02.jpg" class="pc_content" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#n">
+                                    <img src="../../images/ob-en/main/rel_slide03.jpg" class="pc_content" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#n">
+                                    <img src="../../images/ob-en/main/rel_slide04.jpg" class="pc_content" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#n">
+                                    <img src="../../images/ob-en/main/rel_slide05.jpg" class="pc_content" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#n">
+                                    <img src="../../images/ob-en/main/rel_slide06.jpg" class="pc_content" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#n">
+                                    <img src="../../images/ob-en/main/rel_slide06.jpg" class="pc_content" alt="">
+                                </a>
+                            </div>
+                        </div>               
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <script>
+                        var relatedSwiper = new Swiper('.related_slide', {
+                                slidesPerView: 6,
+                                speed: 1000,
+                                loop: true,
+                                navigation: {
+                                    nextEl: '.swiper-button-next',
+                                    prevEl: '.swiper-button-prev',
+                                },
+                                autoplay: {
+                                    delay: 3000,
+                                },
+                            })
+                    </script>
+                </div>
+            </div>
+
+        </div>
+
+         <!-- footer : [퍼블용 임시 include] -->
+         <div w3-include-html="inc/footer.html"></div>
+         <!-- //개발 언어로 footer.html을 include 해주세요. --> 
+    </div>
+</body>

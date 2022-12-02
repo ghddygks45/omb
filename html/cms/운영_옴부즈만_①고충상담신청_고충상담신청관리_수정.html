@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1240">
+	<title>Invest Korea</title>
+	<link rel="shortcut icon" href="../../images/cms/favicon.ico" media="all">
+	<link rel="stylesheet" type="text/css" href="../../css/cms/style.css" media="all">
+	<script src="../../js/cms/jquery-1.12.0.min.js"></script>
+	<script src="../../js/cms/calendar.js"></script>
+	<script src="../../js/cms/ui.js"></script>
+</head>
+
+<body id="user-admin" class="layout-page">
+	<header id="header"></header>
+	<div id="container">
+		<aside id="sidebar"></aside>
+        <article id="content">
+            <p id="page_loc">
+                <a href="#none" class="ico_home">HOME</a>
+                <span>&gt;</span>
+                <a href="#none">옴부즈만</a>
+                <span>&gt;</span> 
+                <a href="#none">고충상담신청</a>
+                <span>&gt;</span>
+                <strong>고충상담신청 관리</strong>
+            </p>
+    
+            <h2 id="tit_page">고충상담신청 관리</h2>
+
+            
+                <h3 class="tit1 mt25">고충상담 신청정보</h3>
+                <table class="tb_write">
+                    <colgroup>
+                        <col style="width:180px">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>제목</th>
+                            <td>
+                                <input type="text" name="sj" id="sj" maxlength="100" style="width:100%;" value="주40시간 시행관련 파견근로자 포함 여부">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>상담내용</th>
+                            <td>
+                                <textarea name="dc" id="dc" rows="5">신고내용</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>첨부파일</th>
+                            <td>
+                                <input type="file" id="lb_file" style="width:300px;">
+                                <span class="vam ml5 mr5">첨부된 파일명.zip</span>
+                                <button type="button" class="bold underline">[다운로드]</button>
+                                <button type="button" class="bold underline color-red">[삭제]</button>
+                                <div class="mt5 color-red">※첨부파일을 변경 시 기존에 첨부되었던 파일을 삭제가 됩니다.</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="tit1 mt25">비대면 화상 또는 방문 상담 신청</h3>
+                <table class="tb_write">
+                    <colgroup>
+                        <col style="width:180px">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>신청여부 및 상담 희망일1</th>
+                            <td>
+                                <input type="radio" value="Y" name="radio" id="rd1" checked="checked">
+                                <label for="rd1">방문상담</label>
+                                <input type="radio" value="N" name="radio" id="rd2">
+                                <label for="rd2" class="ml0">화상상담</label>
+                                <input type="text" id="hope1" title="상담 희망일1" style="width:100px;" /><a href="#divCalendar" class="btn_cal" onclick="openCalendar(document.getElementById('hope1')); return false;">달력</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>신청여부 및 상담 희망일2</th>
+                            <td>
+                                <input type="radio" value="Y" name="radio2" id="rd3" checked="checked">
+                                <label for="rd3">방문상담</label>
+                                <input type="radio" value="N" name="radio2" id="rd4">
+                                <label for="rd4" class="ml0">화상상담</label>
+                                <input type="text" id="hope2" title="상담 희망일2" style="width:100px;" /><a href="#divCalendar" class="btn_cal" onclick="openCalendar(document.getElementById('hope2')); return false;">달력</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="tit1 mt25">고충상담 기본정보</h3>
+                <table class="tb_write">
+                    <colgroup>
+                        <col style="width:180px">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>회사명</th>
+                            <td><input type="text" style="width:500px;" value="가이스트코리아"></td>
+                        </tr>
+                        <tr>
+                            <th>사업자등록번호</th>
+                            <td><input type="text" style="width:500px;" value="105-86-79728"></td>
+                        </tr>
+                        <tr>
+                            <th>신청자</th>
+                            <td><input type="text" style="width:500px;" value="이희성"></td>
+                        </tr>
+                        <tr>
+                            <th>회사전화번호</th>
+                            <td><input type="text" style="width:500px;" value="02-6959-9855"></td>
+                        </tr>
+                        <tr>
+                            <th>연락가능 전화번호</th>
+                            <td><input type="text" style="width:500px;" value="010-6844-2810"></td>
+                        </tr>
+                        <tr>
+                            <th>이메일</th>
+                            <td><input type="text" style="width:500px;" value="leehee43@naver.com"></td>
+                        </tr>
+                        <tr>
+                            <th>진행사항 수신여부</th>
+                            <td>
+                                <input type="radio" value="Y" name="radio-2" id="rd-2" checked="checked">
+                                <label for="rd-2">전체</label>
+                                <input type="radio" value="Y" name="radio-2" id="rd-3">
+                                <label for="rd-3">SMS</label>
+                                <input type="radio" value="Y" name="radio-2" id="rd-4">
+                                <label for="rd-4">E-MAIL</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="btn_area">
+                    <div class="fl"><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="btn btn_lg basic"><i class="fa fa-list-ul"></i> 목록</a></div>
+                    <div class="fr">
+                        <!-- <button type="button" class="btn btn_lg act"><i class="fa fa-save"></i> 등록</button> -->
+                        <button type="button" class="btn btn_lg act"><i class="fa fa-edit"></i> 수정</button>
+                        <button type="button" class="btn btn_lg" id="btnDelt"><i class="fa fa-trash-o"></i> 삭제</button>          
+                    </div>
+                </div>
+             
+                
+
+        
+        </article>
+	</div>
+	<footer id="footer"></footer>
+</body>
+
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1240">
+	<title>Invest Korea</title>
+	<link rel="shortcut icon" href="../../images/cms/favicon.ico" media="all">
+	<link rel="stylesheet" type="text/css" href="../../css/cms/style.css" media="all">
+	<script src="../../js/cms/jquery-1.12.0.min.js"></script>
+	<script src="../../js/cms/calendar.js"></script>
+	<script src="../../js/cms/ui.js"></script>
+</head>
+
+<body id="user-admin" class="layout-page">
+	<header id="header"></header>
+	<div id="container">
+		<aside id="sidebar"></aside>
+        <article id="content">
+            <p id="page_loc">
+                <a href="#none" class="ico_home">HOME</a>
+                <span>&gt;</span>
+                <a href="#none">옴부즈만</a>
+                <span>&gt;</span> 
+                <a href="#none">고충상담신청</a>
+                <span>&gt;</span>
+                <strong>고충상담신청 관리</strong>
+            </p>
+    
+            <h2 id="tit_page">고충상담신청 관리</h2>
+
+            
+                <h3 class="tit1 mt25">고충상담 신청정보</h3>
+                <table class="tb_write">
+                    <colgroup>
+                        <col style="width:180px">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>홈페이지 구분</th>
+                            <td>국문  l  영문</td>
+                        </tr>
+                        <tr>
+                            <th>작성일</th>
+                            <td>2021. 07. 30.</td>
+                        </tr>
+                        <tr>
+                            <th>처리상태</th>
+                            <td><span class="color-green bold">답변대기</span> l  <span class="bold">답변완료</span></td>
+                        </tr>
+                        <tr>
+                            <th>답변확인 여부</th>
+                            <td><span class="bold">미확인</span> l  <span class="color-blue bold">수신 (2021.07.30  15:20:11)</span></td>
+                        </tr>
+                        <tr>
+                            <th>신청 상담분야</th>
+                            <td><span class="bold">노무 / 인사</span> l <span class="bold">홍길동(gilldong)</span></td>
+                        </tr>
+                        <tr>
+                            <th>상담분야 변경</th>
+                            <td>
+                                <a href="#trans" onclick="openLayer(this);" class="label bg_info">상담분야 변경</a> 
+                                <span class="vm">
+                                    정주환경 l 이진철(chulyda) <span class="color-red ml5">※[상담분야 변경]클릭 시 상담분야 및 홈닥터를 배정하실 수 있습니다.</span>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>제목</th>
+                            <td><span class="bold">주40시간 시행관련 파견근로자 포함 여부</span></td>
+                        </tr>
+                        <tr>
+                            <th>상담내용</th>
+                            <td>
+                                신고내용<br>
+                                - 동사의 현 종업원은 32명으로, 08.7.1이후 주40시간 적용대상 사업장임<br>
+                                - 4월경 제품양산인력을 파견근로자(5~60명 예상)로 충원코자 하는데 이 경우 금년7월1일부터 주40시간 적용대상사업장이 되는 것이 아닌지,<br>
+                                - 동사의 경우 03년 설립이래 누적적자로 인해 인건비 등 추가지출이 매우 중요한 사안이므로 명확한 답변을 요청
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>첨부파일</th>
+                            <td>첨부된 파일명.hwp <button type="button" class="bold underline">[다운로드]</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- 레이어팜업 : 상담분야 변경 -->
+                <div id="trans" class="layer_popup modal">
+                    <!-- // 레이어 크기 변경시 사이즈 지정 style="width:600px; height:500px;" -->
+                    <div class="bg"></div>
+                    <h2 class="tit_layer" tabindex="0">상담분야 변경</h2>
+                    <div class="layer_cont">
+                        <table class="tb_search">
+                            <caption>상담분야 변경</caption>
+                            <colgroup>
+                                <col style="width:130px">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="text-left">신청 상담분야</th>
+                                    <td><span class="bold">노무/인사</span> l <span class="bold">홍길동 (gilldong)</span></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">상담분야 변경</th>
+                                    <td>
+                                        <select name="" id="" style="width:160px">
+                                            <option value="">상담분야 선택</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">홈닥터 목록</th>
+                                    <td>
+                                        <div class="mb5">
+                                            <input type="radio" name="radio3" id="radio3-all" checked=""><label for="radio3-all">홍길동(gilldong)</label>
+                                        </div>
+                                        <div class="mb5">
+                                            <input type="radio" name="radio3" id="radio3-1"><label for="radio3-1">이진철(chulyda)</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="radio3" id="radio3-2"><label for="radio3-2">조헌진(catharsis47)</label>
+                                        </div>
+                                    </td>
+                                </tr>      
+                            </tbody>
+                        </table>
+                        <div class="btn_area">
+                            <div class="fr">
+                                <button type="button" class="btn btn_lg act" id="btnSave"><i class="fa fa-save"></i> 적용</button>
+                                <a href="#trans" onclick="closeLayer(this);" class="btn btn_lg basic"><i class="fa fa-arrow-left"></i> 취소</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn_layer_close" onclick="closeLayer(this);">레이어닫기</button>
+                </div>
+                <!-- // 레이어팜업 : 상담분야 변경 -->
+
+                <h3 class="tit1 mt25">비대면 화상 또는 방문 상담 신청</h3>
+                <table class="tb_write">
+                    <colgroup>
+                        <col style="width:180px">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2">화상상담 신청여부</th>
+                            <td>
+                                <span class="vm"><span class="color-blue bold">신청1 : 2021.07.30</span>  l  <span class="color-green bold">신청2 : 2021.08.02</span> l <span class="color-red bold">방문상담 : 2021.08.03</span></span>
+                                <a href="#management" onclick="openLayer(this);" class="label bg_primary ml10">화상상담 관리</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="bold">화상상담시간 : 2021.08.02  13시</span> l <span class="bold">방문상담 : 2021.08.03  15시</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- 레이어팜업 : 비대면 화상상담 관리 -->
+                <div id="management" class="layer_popup modal">
+                    <!-- // 레이어 크기 변경시 사이즈 지정 style="width:600px; height:500px;" -->
+                    <div class="bg"></div>
+                    <h4 class="tit_layer" tabindex="0">비대면 화상상담 관리</h4>
+                    <div class="layer_cont">
+                        <table class="tb_search">
+                            <caption>비대면 화상상담 관리</caption>
+                            <colgroup>
+                                <col style="width:160px">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="text-left">화상상담 신청 시간</th>
+                                    <td>2021.07.30</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">상담구분</th>
+                                    <td>
+                                        <input type="radio" value="Y" name="radio" id="rd1" checked="checked">
+                                        <label for="rd1">방문상담</label>
+                                        <input type="radio" value="N" name="radio" id="rd2">
+                                        <label for="rd2" class="ml0">화상상담</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">상담 시간</th>
+                                    <td>
+                                        <input type="text" id="sellFr" title="시작일" style="width:130px;" />
+								        <a href="#divCalendar" class="btn_cal" onclick="openCalendar(document.getElementById('sellFr')); return false;">달력</a>
+                                        <select name="" id="" title="상담시간 선택">
+                                            <option value="">00시</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <!-- 화상상담일 경우에만 보여줌 -->
+                                <!-- <tr>
+                                    <th class="text-left">화상초대 URL</th>
+                                    <td>
+                                        <input type="text" name="sj" id="sj" maxlength="100" style="width:100%;" value="">
+                                    </td>
+                                </tr>       -->
+                                <!-- // 화상상담일 경우에만 보여줌 -->
+                            </tbody>
+                        </table>
+                        <div class="btn_area">
+                            <div class="fr">
+                                <button type="button" class="btn btn_lg act" id="btnSave"><i class="fa fa-save"></i> 등록</button>
+                                <button type="button" class="btn btn_lg act" id="btnSave"><i class="fa fa-edit"></i> 수정</button>
+                                <a href="#management" onclick="closeLayer(this);" class="btn btn_lg basic"><i class="fa fa-arrow-left"></i> 취소</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn_layer_close" onclick="closeLayer(this);">레이어닫기</button>
+                </div>
+                <!-- // 레이어팜업 : 비대면 화상상담 관리 -->
+
+                <h3 class="tit1 mt25">고충상담 기본정보</h3>
+                <table class="tb_write">
+                    <colgroup>
+                        <col style="width:180px">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>회사명</th>
+                            <td>가이스트코리아</td>
+                        </tr>
+                        <tr>
+                            <th>사업자등록번호</th>
+                            <td>105-86-79728</td>
+                        </tr>
+                        <tr>
+                            <th>담당자명</th>
+                            <td>이희성</td>
+                        </tr>
+                        <tr>
+                            <th>회사전화번호</th>
+                            <td>02-6959-9855</td>
+                        </tr>
+                        <tr>
+                            <th>연락가능 전화번호</th>
+                            <td>010-6844-2810</td>
+                        </tr>
+                        <tr>
+                            <th>이메일</th>
+                            <td>leehee43@naver.com</td>
+                        </tr>
+                        <tr>
+                            <th>진행사항 수신여부</th>
+                            <td>전체 l <span class="color-blue">SMS</span> l <span class="color-green">E-MAIL</span></td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호 재설정</th>
+                            <td><a href="#password" onclick="openLayer(this);" class="label bg_green bold">비밀번호 재발급</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- 레이어팝업 : 비밀번호 재발급 -->
+                <div id="password" class="layer_popup modal h_auto">
+                    <!-- // 레이어 크기 변경시 사이즈 지정 style="width:600px; height:500px;" -->
+                    <div class="bg"></div>
+                    <h4 class="tit_layer" tabindex="0">비밀번호 재발급</h4>
+                    <div class="layer_cont">
+                        <div class="box_search">
+                            등록하신 이메일 주소로 비밀번호가 재발송 되었습니다.
+                        </div>
+                        <div class="btn_area text-center">
+                            <a href="#password" onclick="closeLayer(this);" class="btn btn_lg basic"><i class="fa fa-arrow-left"></i> 닫기</a>
+                        </div>
+                    </div>
+                    <button type="button" class="btn_layer_close" onclick="closeLayer(this);">레이어닫기</button>
+                </div>
+
+
+                <h3 class="tit1 mt25">추가입력사항</h3>
+                <table class="tb_write">
+                    <colgroup>
+                        <col style="width:180px">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>관련규정</th>
+                            <td><input type="text" style="width:100%"></td>
+                        </tr>
+                        <tr>
+                            <th>소관부서</th>
+                            <td><input type="text" style="width:100%"></td>
+                        </tr>
+                        <tr>
+                            <th>담당자</th>
+                            <td><input type="text" style="width:100%"></td>
+                        </tr>
+                        <tr>
+                            <th>직책</th>
+                            <td><input type="text" style="width:100%"></td>
+                        </tr>
+                        <tr>
+                            <th>연락처</th>
+                            <td><input type="text" style="width:100%"></td>
+                        </tr>
+                        <tr>
+                            <th>기타 요청사항</th>
+                            <td><input type="text" style="width:100%"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="btn_area">
+                    <div class="fl"><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="btn btn_lg basic"><i class="fa fa-list-ul"></i> 목록</a></div>
+                    <div class="fr">
+                        <a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_수정.html" class="btn btn_lg act"><i class="fa fa-edit"></i> 수정</a>
+                        <button type="button" class="btn btn_lg" id="btnDelt"><i class="fa fa-trash-o"></i> 삭제</button>          
+                    </div>
+                </div>
+                <!-- // 레이어팝업 : 비밀번호 재발급 -->
+
+                <h3 class="tit1 mt25">홈닥터 답변</h3>
+                <table class="tb_write">
+                    <colgroup>
+                        <col style="width:180px">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>홈닥터</th>
+                            <td>이진철 (chulyda)</td>
+                        </tr>
+                        <tr>
+                            <th>전화번호</th>
+                            <td>1600-7119</td>
+                        </tr>
+                        <tr>
+                            <th>답변내용</th>
+                            <td>
+                                노사지원반 L위원 협조를 받아 검토 의견 제시 주40시간은 상시근로자를 기준으로 판단하고 있음 상시근로자란 통상사용자가 상태적으로 고용하는 평균근로자수임 한편 근로기준법은 임시·일용·상용직 여부에 관계없이 적용되므로, 상시근로자수 산정시는 임시·일용·상용직 여부등에 관계없이 사용자가 직접 고용하고 있는 근로자를 포함하도록 하고 있음
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>첨부파일</th>
+                            <td>
+                                첨부된 파일명.hwp <button type="button" class="bold underline">[다운로드]</button>
+                                <button type="button" class="bold underline color-red">[삭제]</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- 답변이 없을 경우 -->
+                <!-- <div class="bbs_article"><p><span style="font-size: 12px;">아직 등록된 답변이 없습니다</span><br></p></div> -->
+                <!-- // 답변이 없을 경우 -->
+                <div class="btn_area">
+                    <div class="fr">
+                        <a href="#answer" class="btn btn_lg act" onclick="openLayer(this);"><i class="fa fa-pencil"></i> 답변수정</a>
+                        <!-- 답변 등록 버튼 -->
+                        <!-- <a href="#answer" class="btn btn_lg" onclick="openLayer(this);"><i class="fa fa-pencil"></i> 답변등록</a> -->
+                        <!-- // 답변 등록 버튼 -->
+                    </div>
+                </div>
+                <!-- 레이어팝업 : 답변등록 -->
+                <div id="answer" class="layer_popup modal h_auto">
+                    <!-- // 레이어 크기 변경시 사이즈 지정 style="width:600px; height:500px;" -->
+                    <div class="bg"></div>
+                    <h4 class="tit_layer" tabindex="0">답변등록</h4>
+                    <div class="layer_cont">
+                        <table class="tb_search">
+                            <caption>상담분야 변경</caption>
+                            <colgroup>
+                                <col style="width:130px">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="text-left">답변자</th>
+                                    <td>이진철 (chulyda)</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">답변내용</th>
+                                    <td>
+                                        <textarea name="dc" id="dc" rows="5">노사지원반 L위원 협조를 받아 검토 의견 제시 주40시간은 상시근로자를 기준으로 판단하고 있음 상시근로자란 통상사용자가 상태적으로 고용하는 평균근로자수임 한편 근로기준법은 임시·일용·상용직 여부에 관계없이 적용되므로, 상시근로자수 산정시는 임시·일용·상용직 여부등에 관계없이 사용자가 직접 고용하고 있는 근로자를 포함하도록 하고 있음</textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">첨부파일</th>
+                                    <td>
+                                        <input type="file" id="lb_file" style="width:300px;">
+                                        <span class="vam ml5 mr5">첨부된 파일명.zip</span>
+                                        <button type="button" class="bold underline color-red">[삭제]</button>                                        
+                                    </td>
+                                </tr>      
+                            </tbody>
+                        </table>
+                        <div class="btn_area">
+                            <div class="fr">
+                                <button type="submit" class="btn btn_lg act"><i class="fa fa-save"></i> 등록</button>
+                                <button type="button" class="btn btn_lg act"><i class="fa fa-edit"></i> 수정</button>
+                                <a href="#answer" onclick="closeLayer(this);" class="btn btn_lg basic"><i class="fa fa-arrow-left"></i> 취소</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn_layer_close" onclick="closeLayer(this);">레이어닫기</button>
+                </div>
+                <!-- // 레이어팝업 : 답변등록 -->
+
+                
+
+        
+        </article>
+	</div>
+	<footer id="footer"></footer>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!doctype html>
+<!--[if IE 9 ]><html lang="ko" class="ie9"><![endif]-->
+<!--[if (gt IE 9)]><!--><html lang="ko"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1, minimum-scale=1, width=device-width">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../../images/ob-kr/favicon.ico" media="all">
+    <link rel="stylesheet" href="../../css/ob-kr/common.css">
+    <link rel="stylesheet" href="../../css/ob-kr/sub.css">
+    <link rel="stylesheet" href="../../css/ob-common/jquery-ui.min.css">
+    <script src="../../js/ob-common/jquery-1.12.4.min.js"></script>
+    <script src="../../js/ob-common/jquery-ui.min.js"></script>
+    <!--[if IE 9 ]>
+    <script src="../../resources/ob-resources/placeholder.min.js"></script>
+    <![endif]-->
+    <script src="../../resources/ob-resources/jspdf.min.js"></script>
+    <script src="../../resources/ob-resources/html2canvas.min.js"></script>
+    <script src="../../resources/ob-resources/datepicker-ko.js"></script>
+    <script src="../../resources/ob-resources/es6-promise.auto.js"></script>
+    <script src="../../js/ob-common/resize.js"></script>
+    <script src="../../js/ob-kr/ui.js"></script>
+    <script src="../../js/ob-common/include.js"></script>
+	<title>나의신청내역 &lt; 고충상담 | 외국인투자옴부즈만</title>
+    <script>
+       function fn_pub(){
+            currentPage(2)
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- skip_navigation : [퍼블용 임시 include] -->
+    <div w3-include-html="inc/skip_nav.html"></div>
+    <!-- //개발 언어로 skip_navigation.html을 include 해주세요. --> 
+    
+    <div id="wrap">
+        <!-- header : [퍼블용 임시 include] -->
+		<div w3-include-html="inc/header.html"></div>
+		<!-- //개발 언어로 header.html을 include 해주세요. --> 
+    
+        <div id="content">
+            <div class="content_inner">
+               <!-- lnb : [퍼블용 임시 include] -->
+               <div w3-include-html="inc/lnb01.html"></div>
+               <!-- //개발 언어로 lnb.html을 include 해주세요. --> 
+
+                <!-- ctn -->
+                <div id="ctn">
+                    <div class="ctn_top">
+                       
+                        <h3 class="ctn_tit">나의 신청 내역</h3>
+
+                        <!-- location -->
+                        <div class="location">
+                            <ul>
+                                <li class="home"><span class="blind">홈</span></li>
+                                <li class="depth01">고충상담</li>
+                                <li class="depth02 on">나의 신청 내역</li>
+                            </ul>
+                        </div>
+                        <!-- // location -->
+
+                        <!-- sns : [퍼블용 임시 include] -->
+                        <div w3-include-html="inc/sns.html"></div>
+                        <!-- //개발 언어로 sns.html을 include 해주세요. --> 
+
+                    </div>
+
+                    <div class="intro_box bg02">
+                        <strong>고충상담 내용을 신청 시 입력하신 이메일과 비밀번호를 통해 확인하실 수 있습니다.</strong>
+                        <div class="col_blue">※ 신청하신 고충상담의 진행현황을 확인하실 수 있으며, 답변 전의 상담신청 내용을 수정 또는 삭제하실 수 있습니다.</div>
+                        <div class="info">
+                            <span class="tel"><span class="bold">문의전화 : </span>02)3497-1825</span>
+                        </div>
+                    </div>
+
+                    <h4 class="sec_tit">고충상담 신청자 정보 확인</h4>
+                    <div class="email_certi_box type02">
+                        <div class="top">
+                            <strong class="st mb0">신청 시 입력한 이메일과 비밀번호 인증이 필요합니다.</strong>
+                        </div>
+                        <div class="bottom">
+                            <form action="?">
+                                <div class="wrap">
+                                    <div class="l">
+                                        <div class="inp_box">
+                                            <input type="text" title="신청 시 입력한 이메일 입력창" placeholder="신청 시 입력하신 이메일을 입력하세요">
+                                        </div>
+                                        <div class="inp_box">
+                                            <input type="password" title="신청 시 입력한 비밀번호 입력창" placeholder="신청 시 입력하신 비밀번호를 입력하세요">
+                                        </div>
+                                    </div>
+                                    <div class="r">
+                                        <button type="button" class="btn bg_blue check" onclick="fn_open_popup('success')">확인</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <a href="#n" class="password_re" onclick="fn_open_popup('re_issued')">[비밀번호 재발급]</a>
+                        </div>
+                    </div>
+                    <!-- 팝업 : 정보 확인 불가 -->
+                    <div class="popup_wrap type02 bg03 txt_c" data-popup="fail" tabindex="0">
+                        <div class="popup_box">
+                            <div class="top">
+                                <div class="tit">고충상담 신청자 정보 확인 불가</div>
+                            </div>
+                            <div class="bottom">
+                                <div class="msg_box">
+                                    <div class="strong">고충상담 신청시 입력하신 이메일과 비밀번호와<br> 정보가 일치하지 않습니다.</div>
+                                    <div>비밀번호를 잊으신 경우 비밀번호 재발급을 신청하시면<br>신청 시 등록하신 이메일을 통해 임시 비밀번호가 전송됩니다.</div>
+                                    <div class="col_blue">※ 문의 전화: 02)3497-1827</div>
+                                </div>
+                                <div class="btn_box">
+                                    <a href="#n" class="btn bg_d_gr" onclick="fn_hide_popup('fail');">닫기</a>
+                                </div>
+                            </div>
+                            <button class="btn_close_pop" type="button" onclick="fn_hide_popup('fail');"><span class="blind">팝업닫기</span></button>
+                        </div>
+                    </div>
+                    <!-- // 팝업 : 정보 확인 불가 -->
+                    <!-- 팝업 : 재발급 완료 -->
+                    <div class="popup_wrap type02 bg04 txt_c" data-popup="success" tabindex="0">
+                        <div class="popup_box">
+                            <div class="top">
+                                <div class="tit">비밀번호 재발급 완료</div>
+                            </div>
+                            <div class="bottom">
+                                <div class="msg_box">
+                                    <div class="strong">고충상담 신청 시 등록하신 이메일을 통해 비밀번호가 전송되었습니다.</div>
+                                    <div>재발급된 비밀번호를 확인 하신 후 다시 시도해주세요.</div>
+                                    <div class="col_blue">※ 문의전화: 02)3497-1827</div>
+                                </div>
+                                <div class="btn_box">
+                                    <a href="#n" class="btn bg_d_gr" onclick="fn_hide_popup('success');">닫기</a>
+                                </div>
+                            </div>
+                            <button class="btn_close_pop" type="button" onclick="fn_hide_popup('success');"><span class="blind">팝업닫기</span></button>
+                        </div>
+                    </div>
+                    <!-- // 팝업 : 재발급 완료 -->
+                    <!-- 팝업 : 재발급 신청 -->
+                    <div class="popup_wrap type02 bg04 txt_c" data-popup="re_issued" tabindex="0">
+                        <div class="popup_box">
+                            <div class="top">
+                                <div class="tit">비밀번호 재발급 신청</div>
+                            </div>
+                            <div class="bottom">
+                                <div class="msg_box">
+                                    <div class="strong">비밀번호 재발급 신청</div>
+                                    <div>고충상담 신청 시 등록하신 이메일로
+                                        임시 비밀번호가 전송됩니다.</div>
+                                </div>
+                                <div class="wrap">
+                                    <div class="l">
+                                        <input type="text" placeholder="신청 시 입력하신 이메일을 입력하세요" title="신청 시 입력한 이메일 입력 창">
+                                    </div>
+                                    <div class="btn_box r">
+                                        <a href="#n" class="btn bg_blue">비밀번호 재발급</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn_close_pop" type="button" onclick="fn_hide_popup('re_issued');"><span class="blind">팝업닫기</span></button>
+                        </div>
+                    </div>
+                    <!-- // 팝업 : 재발급 신청 -->
+                </div>
+                <!-- // ctn -->
+            </div>
+
+            <!-- footer : [퍼블용 임시 include] -->
+            <div w3-include-html="inc/footer.html"></div>
+            <!-- //개발 언어로 footer.html을 include 해주세요. --> 
+        </div>
+    </div>
+</body>

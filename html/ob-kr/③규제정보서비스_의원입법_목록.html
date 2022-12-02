@@ -1,0 +1,366 @@
+<!doctype html>
+<!--[if IE 9 ]><html lang="ko" class="ie9"><![endif]-->
+<!--[if (gt IE 9)]><!--><html lang="ko"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1, minimum-scale=1, width=device-width">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../../images/ob-kr/favicon.ico" media="all">
+    <link rel="stylesheet" href="../../css/ob-kr/common.css">
+    <link rel="stylesheet" href="../../css/ob-kr/sub.css">
+    <link rel="stylesheet" href="../../css/ob-common/jquery-ui.min.css">
+    <script src="../../js/ob-common/jquery-1.12.4.min.js"></script>
+    <script src="../../js/ob-common/jquery-ui.min.js"></script>
+    <!--[if IE 9 ]>
+    <script src="../../resources/ob-resources/placeholder.min.js"></script>
+    <![endif]-->
+    <script src="../../resources/ob-resources/jspdf.min.js"></script>
+    <script src="../../resources/ob-resources/html2canvas.min.js"></script>
+    <script src="../../resources/ob-resources/datepicker-ko.js"></script>
+    <script src="../../resources/ob-resources/es6-promise.auto.js"></script>
+    <script src="../../js/ob-common/resize.js"></script>
+    <script src="../../js/ob-kr/ui.js"></script>
+    <script src="../../js/ob-common/include.js"></script>
+	<title>목록 &lt; 의원입법 &lt; 규제정보서비스 | 외국인투자옴부즈만</title>
+    <script>
+       function fn_pub(){
+            currentPage(3)
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- skip_navigation : [퍼블용 임시 include] -->
+    <div w3-include-html="inc/skip_nav.html"></div>
+    <!-- //개발 언어로 skip_navigation.html을 include 해주세요. --> 
+    
+    <div id="wrap">
+        <!-- header : [퍼블용 임시 include] -->
+		<div w3-include-html="inc/header.html"></div>
+		<!-- //개발 언어로 header.html을 include 해주세요. --> 
+    
+        <div id="content">
+            <div class="content_inner">
+               <!-- lnb : [퍼블용 임시 include] -->
+               <div w3-include-html="inc/lnb03.html"></div>
+               <!-- //개발 언어로 lnb.html을 include 해주세요. --> 
+
+                <!-- ctn -->
+                <div id="ctn">
+                    <div class="ctn_top">
+                       
+                        <h3 class="ctn_tit">의원입법</h3>
+
+                        <!-- location -->
+                        <div class="location">
+                            <ul>
+                                <li class="home"><span class="blind">홈</span></li>
+                                <li class="depth01">규제정보서비스</li>
+                                <li class="depth02 on">의원입법</li>
+                            </ul>
+                        </div>
+                        <!-- // location -->
+
+                        <!-- sns : [퍼블용 임시 include] -->
+                        <div w3-include-html="inc/sns.html"></div>
+                        <!-- //개발 언어로 sns.html을 include 해주세요. --> 
+
+                    </div>
+
+                    <div class="intro_box bg12">
+                        <strong class="mb0">의원발의 법안 중, 규제의 신설·강화 내용을 포함하고 있는 법안에 대한 국회처리 현황 및 규제내용을 알려드리고, 국민 의견을 받습니다.</strong>
+                        <div>여기에 게재된 영문법령은 사용자의 편의를 위해 참고용으로 제공되고 있습니다.</div>
+                        <div class="col_blue mb6">※ 국문법령과 영문법령간에 의미상 차이가 있는 경우 국문법령이 효력을 가집니다.</div>
+                        <div class="col_blue">※ 2014. 7. 1 이후 발의된 법안</div>
+                    </div>
+
+                    <div class="tab_area type02">
+                        <button type="button" class="tit" title="열기">전체</button>
+                        <ul class="tab auto">
+                            <li class="active"><a href="#n"><span>전체</span></a></li>
+                            <li><a href="#n"><span>노무/인사</span></a></li>
+                            <li><a href="#n"><span>조세/세무</span></a></li>
+                            <li><a href="#n"><span>환경</span></a></li>
+                            <li><a href="#n"><span>금융/외환</span></a></li>
+                            <li><a href="#n"><span>정주환경</span></a></li>
+                            <li><a href="#n"><span>관세/통관</span></a></li>
+                            <li><a href="#n"><span>건설</span></a></li>
+                            <li><a href="#n"><span>지적재산권/IT</span></a></li>
+                            <li><a href="#n"><span>기타</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="search_area">
+                        <div class="search_box type02">
+                            <form action="?">
+                                <div class="l">
+                                    <div class="top">
+                                        <select name="" id="" title="검색옵션선택1">
+                                            <option value="">소관부처 선택</option>
+                                        </select>
+                                        <select name="" id="" title="검색옵션선택2">
+                                            <option value="">제목</option>
+                                        </select>
+                                    </div>
+                                    <div class="bottom">
+                                        <input type="text" title="검색어 입력">
+                                    </div>
+                                </div>
+                                <div class="r">
+                                    <button class="btn bg_blue search_btn sm" type="submit">검색</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="board_wrap">
+                        <div class="board_top">
+                            <div class="l">
+                                전체 : <span class="num">123</span> 건
+                            </div>
+                            <div class="r">
+                                <select name="" id="" title="개수 선택">
+                                    <option value="">10개씩</option>
+                                </select>
+                                <button type="button" class="btn bg_d_gr sm">이동</button>
+                            </div>
+                        </div>
+                        <!-- 검색결과 없을경우 -->
+                        <!-- <div class="no-data">
+                            <strong>의원입법 데이터가 없습니다.</strong>
+                        </div> -->
+                        <!-- // 검색결과 없을경우 -->
+                        <div class="board_bottom">
+                            <ul class="board_list">
+                                <li>
+                                    <div class="num">No.<span>1,234</span></div>
+                                    <div class="cont">
+                                        <div class="tit_box">
+                                            <span class="l">
+                                                <span class="keyword">[조세/세무]</span>
+                                            </span>
+                                            <span class="r">
+                                                <a href="③규제정보서비스_의원입법_상세.html" class="tit">
+                                                    수소경제 육성 및 수소 안전관리에 관한 법률
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <ul class="list01">
+                                            <li><span class="bold">소관부처 : </span>산업통상자원부</li>
+                                            <li><span class="bold">입법예고일 : </span>2021.06.04</li>
+                                            <li><span class="bold">의견마감일 : </span>2021.07.14</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="num">No.<span>1,234</span></div>
+                                    <div class="cont">
+                                        <div class="tit_box">
+                                            <span class="l">
+                                                <span class="keyword">[조세/세무]</span>
+                                            </span>
+                                            <span class="r">
+                                                <a href="③규제정보서비스_의원입법_상세.html" class="tit">
+                                                    수소경제 육성 및 수소 안전관리에 관한 법률
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <ul class="list01">
+                                            <li><span class="bold">소관부처 : </span>산업통상자원부</li>
+                                            <li><span class="bold">입법예고일 : </span>2021.06.04</li>
+                                            <li><span class="bold">의견마감일 : </span>2021.07.14</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="num">No.<span>1,234</span></div>
+                                    <div class="cont">
+                                        <div class="tit_box">
+                                            <span class="l">
+                                                <span class="keyword">[조세/세무]</span>
+                                            </span>
+                                            <span class="r">
+                                                <a href="③규제정보서비스_의원입법_상세.html" class="tit new">
+                                                    수소경제 육성 및 수소 안전관리에 관한 법률
+                                                </a>
+                                                <img src="../../images/ob-kr/ico_new_m.png" alt="새 글" class="changeImg">
+                                            </span>
+                                        </div>
+                                        <ul class="list01">
+                                            <li><span class="bold">소관부처 : </span>산업통상자원부</li>
+                                            <li><span class="bold">입법예고일 : </span>2021.06.04</li>
+                                            <li><span class="bold">의견마감일 : </span>2021.07.14</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="num">No.<span>1,234</span></div>
+                                    <div class="cont">
+                                        <div class="tit_box">
+                                            <span class="l">
+                                                <span class="keyword">[조세/세무]</span>
+                                            </span>
+                                            <span class="r">
+                                                <a href="③규제정보서비스_의원입법_상세.html" class="tit">
+                                                    수소경제 육성 및 수소 안전관리에 관한 법률
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <ul class="list01">
+                                            <li><span class="bold">소관부처 : </span>산업통상자원부</li>
+                                            <li><span class="bold">입법예고일 : </span>2021.06.04</li>
+                                            <li><span class="bold">의견마감일 : </span>2021.07.14</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="num">No.<span>1,234</span></div>
+                                    <div class="cont">
+                                        <div class="tit_box">
+                                            <span class="l">
+                                                <span class="keyword">[조세/세무]</span>
+                                            </span>
+                                            <span class="r">
+                                                <a href="③규제정보서비스_의원입법_상세.html" class="tit">
+                                                    수소경제 육성 및 수소 안전관리에 관한 법률
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <ul class="list01">
+                                            <li><span class="bold">소관부처 : </span>산업통상자원부</li>
+                                            <li><span class="bold">입법예고일 : </span>2021.06.04</li>
+                                            <li><span class="bold">의견마감일 : </span>2021.07.14</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="num">No.<span>1,234</span></div>
+                                    <div class="cont">
+                                        <div class="tit_box">
+                                            <span class="l">
+                                                <span class="keyword">[조세/세무]</span>
+                                            </span>
+                                            <span class="r">
+                                                <a href="③규제정보서비스_의원입법_상세.html" class="tit new">
+                                                    수소경제 육성 및 수소 안전관리에 관한 법률
+                                                </a>
+                                                <img src="../../images/ob-kr/ico_new_m.png" alt="새 글" class="changeImg">
+                                            </span>
+                                        </div>
+                                        <ul class="list01">
+                                            <li><span class="bold">소관부처 : </span>산업통상자원부</li>
+                                            <li><span class="bold">입법예고일 : </span>2021.06.04</li>
+                                            <li><span class="bold">의견마감일 : </span>2021.07.14</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="num">No.<span>1,234</span></div>
+                                    <div class="cont">
+                                        <div class="tit_box">
+                                            <span class="l">
+                                                <span class="keyword">[조세/세무]</span>
+                                            </span>
+                                            <span class="r">
+                                                <a href="③규제정보서비스_의원입법_상세.html" class="tit">
+                                                    수소경제 육성 및 수소 안전관리에 관한 법률
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <ul class="list01">
+                                            <li><span class="bold">소관부처 : </span>산업통상자원부</li>
+                                            <li><span class="bold">입법예고일 : </span>2021.06.04</li>
+                                            <li><span class="bold">의견마감일 : </span>2021.07.14</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="num">No.<span>1,234</span></div>
+                                    <div class="cont">
+                                        <div class="tit_box">
+                                            <span class="l">
+                                                <span class="keyword">[조세/세무]</span>
+                                            </span>
+                                            <span class="r">
+                                                <a href="③규제정보서비스_의원입법_상세.html" class="tit">
+                                                    수소경제 육성 및 수소 안전관리에 관한 법률
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <ul class="list01">
+                                            <li><span class="bold">소관부처 : </span>산업통상자원부</li>
+                                            <li><span class="bold">입법예고일 : </span>2021.06.04</li>
+                                            <li><span class="bold">의견마감일 : </span>2021.07.14</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="num">No.<span>1,234</span></div>
+                                    <div class="cont">
+                                        <div class="tit_box">
+                                            <span class="l">
+                                                <span class="keyword">[조세/세무]</span>
+                                            </span>
+                                            <span class="r">
+                                                <a href="③규제정보서비스_의원입법_상세.html" class="tit new">
+                                                    수소경제 육성 및 수소 안전관리에 관한 법률
+                                                </a>
+                                                <img src="../../images/ob-kr/ico_new_m.png" alt="새 글" class="changeImg">
+                                            </span>
+                                        </div>
+                                        <ul class="list01">
+                                            <li><span class="bold">소관부처 : </span>산업통상자원부</li>
+                                            <li><span class="bold">입법예고일 : </span>2021.06.04</li>
+                                            <li><span class="bold">의견마감일 : </span>2021.07.14</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="num">No.<span>1,234</span></div>
+                                    <div class="cont">
+                                        <div class="tit_box">
+                                            <span class="l">
+                                                <span class="keyword">[조세/세무]</span>
+                                            </span>
+                                            <span class="r">
+                                                <a href="③규제정보서비스_의원입법_상세.html" class="tit new">
+                                                    수소경제 육성 및 수소 안전관리에 관한 법률
+                                                </a>
+                                                <img src="../../images/ob-kr/ico_new_m.png" alt="새 글" class="changeImg">
+                                            </span>
+                                        </div>
+                                        <ul class="list01">
+                                            <li><span class="bold">소관부처 : </span>산업통상자원부</li>
+                                            <li><span class="bold">입법예고일 : </span>2021.06.04</li>
+                                            <li><span class="bold">의견마감일 : </span>2021.07.14</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="paging">
+                        <a href="#n" class="btn-paging01"><span class="blind">처음 페이지로 이동</span></a>
+                        <a href="#n" class="btn-paging02"><span class="blind">이전 페이지로 이동</span></a>
+                        <strong>1</strong>
+                        <a href="#n">2</a>
+                        <a href="#n">3</a>
+                        <a href="#n">4</a>
+                        <a href="#n">5</a>
+                        <a href="#n" class="btn-paging03"><span class="blind">다음 페이지로 이동</span></a>
+                        <a href="#n" class="btn-paging04"><span class="blind">마지막 페이지로 이동</span></a>
+                    </div>
+
+                </div>
+                <!-- // ctn -->
+            </div>
+
+            <!-- footer : [퍼블용 임시 include] -->
+            <div w3-include-html="inc/footer.html"></div>
+            <!-- //개발 언어로 footer.html을 include 해주세요. --> 
+        </div>
+    </div>
+</body>

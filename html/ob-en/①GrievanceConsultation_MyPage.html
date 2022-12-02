@@ -1,0 +1,174 @@
+<!doctype html>
+<!--[if IE 9 ]><html lang="en" class="ie9"><![endif]-->
+<!--[if (gt IE 9)]><!--><html lang="en"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1, minimum-scale=1, width=device-width">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../../images/ob-en/favicon.ico" media="all">
+    <link rel="stylesheet" href="../../css/ob-en/common.css">
+    <link rel="stylesheet" href="../../css/ob-en/sub.css">
+    <link rel="stylesheet" href="../../css/ob-common/jquery-ui.min.css">
+    <script src="../../js/ob-common/jquery-1.12.4.min.js"></script>
+    <script src="../../js/ob-common/jquery-ui.min.js"></script>
+    <!--[if IE 9 ]>
+    <script src="../../resources/ob-resources/placeholder.min.js"></script>
+    <![endif]-->
+    <script src="../../resources/ob-resources/jspdf.min.js"></script>
+    <script src="../../resources/ob-resources/html2canvas.min.js"></script>
+    <script src="../../resources/ob-resources/datepicker-ko.js"></script>
+    <script src="../../resources/ob-resources/es6-promise.auto.js"></script>
+    <script src="../../js/ob-common/resize.js"></script>
+    <script src="../../js/ob-en/ui.js"></script>
+    <script src="../../js/ob-common/include.js"></script>
+	<title>My Page &lt; Grievance Consultation | Office of Foreign Investment Ombudsman</title>
+    <script>
+       function fn_pub(){
+            currentPage(2)
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- skip_navigation : [퍼블용 임시 include] -->
+    <div w3-include-html="inc/skip_nav.html"></div>
+    <!-- //개발 언어로 skip_navigation.html을 include 해주세요. --> 
+    
+    <div id="wrap">
+        <!-- header : [퍼블용 임시 include] -->
+		<div w3-include-html="inc/header.html"></div>
+		<!-- //개발 언어로 header.html을 include 해주세요. --> 
+    
+        <div id="content">
+            <div class="content_inner">
+               <!-- lnb : [퍼블용 임시 include] -->
+               <div w3-include-html="inc/lnb01.html"></div>
+               <!-- //개발 언어로 lnb.html을 include 해주세요. --> 
+
+                <!-- ctn -->
+                <div id="ctn">
+                    <div class="ctn_top">
+                       
+                        <h3 class="ctn_tit">My Page</h3>
+
+                        <!-- location -->
+                        <div class="location">
+                            <ul>
+                                <li class="home"><span class="blind">Home</span></li>
+                                <li class="depth01">Grievance Consultation</li>
+                                <li class="depth02 on">My Page</li>
+                            </ul>
+                        </div>
+                        <!-- // location -->
+
+                        <!-- sns : [퍼블용 임시 include] -->
+                        <div w3-include-html="inc/sns.html"></div>
+                        <!-- //개발 언어로 sns.html을 include 해주세요. --> 
+
+                    </div>
+
+                    <div class="intro_box bg02">
+                        <strong>To access to your page, please fill in your email address and password that you set up during the application process.</strong>
+                        <div class="col_blue">※ After entering your information, you can check developments in the process, and you can revise or delete your application before it is answered.</div>
+                        <div class="info">
+                            <span class="tel"><span class="bold">Contact : </span>02)3497-1825</span>
+                        </div>
+                    </div>
+
+                    <h4 class="sec_tit">Applicant’s Information for Grievance Consultation</h4>
+                    <div class="email_certi_box type02">
+                        <div class="bottom">
+                            <form action="?">
+                                <div class="wrap">
+                                    <div class="l">
+                                        <div class="inp_box">
+                                            <input type="text" placeholder="Email address">
+                                        </div>
+                                        <div class="inp_box">
+                                            <input type="password" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="r">
+                                        <button type="button" class="btn bg_blue check" onclick="fn_open_popup('fail')">Enter</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <a href="#n" class="password_re" onclick="fn_open_popup('re_issued')">[Password reissue]</a>
+                        </div>
+                    </div>
+                    <!-- 팝업 : 정보 확인 불가 -->
+                    <div class="popup_wrap type02 bg03 txt_c" data-popup="fail" tabindex="0">
+                        <div class="popup_box">
+                            <div class="top">
+                                <div class="tit">Error message</div>
+                            </div>
+                            <div class="bottom">
+                                <div class="msg_box">
+                                    <div class="strong">The email and password you entered when applying for grievance consultation do not match.</div>
+                                    <div>If you have forgotten your password, please apply for a password reissue, A temporary password will be sent to the email address you registered at the time of application.</div>
+                                    <div class="col_blue">※ Contact: 02)3497-1827</div>
+                                </div>
+                                <div class="btn_box">
+                                    <a href="#n" class="btn bg_d_gr" onclick="fn_hide_popup('fail');">Close</a>
+                                </div>
+                            </div>
+                            <button class="btn_close_pop" type="button" onclick="fn_hide_popup('fail');"><span class="blind">popup close</span></button>
+                        </div>
+                    </div>
+                    <!-- // 팝업 : 정보 확인 불가 -->
+                    <!-- 팝업 : 재발급 신청 -->
+                    <div class="popup_wrap type02 bg04 txt_c" data-popup="re_issued" tabindex="0">
+                        <div class="popup_box">
+                            <div class="top">
+                                <div class="tit">Request for reissuing password</div>
+                            </div>
+                            <div class="bottom">
+                                <div class="msg_box">
+                                    <div class="strong">Request for reissuing password</div>
+                                    <div>A temporary password will be sent to the email address you registered when applying for grievance consultation.</div>
+                                </div>
+                                <div class="wrap">
+                                    <div class="l">
+                                        <input type="text" placeholder="Email address you registered">
+                                    </div>
+                                    <div class="btn_box r">
+                                        <a href="#n" class="btn bg_blue" onclick="fn_open_popup('success'); fn_hide_popup('re_issued');">Send</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn_close_pop" type="button" onclick="fn_hide_popup('re_issued');"><span class="blind">popup close</span></button>
+                        </div>
+                    </div>
+                    <!-- // 팝업 : 재발급 신청 -->
+                    <!-- 팝업 : 재발급 완료 -->
+                    <div class="popup_wrap type02 bg04 txt_c" data-popup="success" tabindex="0">
+                        <div class="popup_box">
+                            <div class="top">
+                                <div class="tit">A temporary password has been sent</div>
+                            </div>
+                            <div class="bottom">
+                                <div class="msg_box">
+                                    <div class="strong">A temporary password has been sent to the email address you entered when applying for grievance consultation.</div>
+                                    <div>Please check your email and try again.</div>
+                                    <div class="col_blue">※ Contact: 02)3497-1827</div>
+                                </div>
+                                <div class="btn_box">
+                                    <a href="#n" class="btn bg_d_gr" onclick="fn_hide_popup('success');">Close</a>
+                                </div>
+                            </div>
+                            <button class="btn_close_pop" type="button" onclick="fn_hide_popup('success');"><span class="blind">popup close</span></button>
+                        </div>
+                    </div>
+                    <!-- // 팝업 : 재발급 완료 -->
+                </div>
+                <!-- // ctn -->
+            </div>
+
+            <!-- footer : [퍼블용 임시 include] -->
+            <div w3-include-html="inc/footer.html"></div>
+            <!-- //개발 언어로 footer.html을 include 해주세요. --> 
+        </div>
+    </div>
+</body>

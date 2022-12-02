@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1240">
+	<title>Invest Korea</title>
+	<link rel="shortcut icon" href="../../images/cms/favicon.ico" media="all">
+	<link rel="stylesheet" type="text/css" href="../../css/cms/style.css" media="all">
+	<script src="../../js/cms/jquery-1.12.0.min.js"></script>
+	<script src="../../js/cms/calendar.js"></script>
+	<script src="../../js/cms/ui.js"></script>
+</head>
+
+<body id="user-admin" class="layout-page">
+	<header id="header"></header>
+	<div id="container">
+		<aside id="sidebar"></aside>
+        <article id="content">
+            <p id="page_loc">
+                <a href="#none" class="ico_home">HOME</a>
+                <span>&gt;</span>
+                <a href="#none">옴부즈만</a>
+                <span>&gt;</span> 
+                <a href="#none">고충상담신청</a>
+                <span>&gt;</span>
+                <strong>고충상담 통계</strong>
+            </p>
+    
+            <h2 id="tit_page">고충상담 통계</h2>
+
+            <table class="tb_search">
+                <caption>검색조건</caption>
+                <colgroup>
+                    <col style="width:12%">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>조회기간</th>
+                        <td>
+                            <input type="text" name="bgnde" id="bgnde" style="width:100px;" readonly="readonly">
+                            <a href="#divCalendar" class="btn_cal" onclick="openCalendar(document.getElementById('bgnde')); return false;">달력</a> ~
+                            <input type="text" name="endde" id="endde" style="width:100px;" readonly="readonly" title="종료일">
+                            <a href="#divCalendar" class="btn_cal" onclick="openCalendar(document.getElementById('endde')); return false;">달력</a>
+                            <a href="#none" class="btn">검색</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3 class="tit1 mt25">홈페이지(국문/영문) 접수 통계</h3>
+            <div class="tb-scroll-x">
+                <table class="tb_list">
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>전체</th>
+                            <th>국문</th>
+                            <th>영문</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">100 건</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">60 건</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">40 건</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="tit1 mt25">상담분야별 통계</h3>
+            <div class="tb-scroll-x">
+                <table class="tb_list">
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">분야</th>
+                            <th colspan="3">총계</th>
+                            <th colspan="3">방문/화상상담</th>
+                        </tr>
+                        <tr>
+                            <th>접수</th>
+                            <th>답변</th>
+                            <th>미답변</th>
+                            <th>방문</th>
+                            <th>화상</th>
+                            <th>미신청</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center">
+                            <td>전체</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">117</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">69</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">52</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">11</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">10</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">217</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>조세/세무</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">10</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>관세/무역</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">9</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">0</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">9</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">0</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">1</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">16</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>금융/외환</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">9</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">9</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">0</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">1</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">17</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>노무인사</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">9</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">9</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">0</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">18</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>영업/유통/광고</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">11</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">11</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">0</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">1</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">21</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>비자/출입국</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">9</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">0</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">9</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">18</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>공장입지/신증설</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">4</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">4</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">0</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">1</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">7</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>건축/토지</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">10</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>전력/용수</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">8</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">0</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">8</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">10</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>도로/교통</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">10</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>투자 인센티브</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">10</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>투자제도/절차</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">10</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>기준/인증/검사</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">10</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>환경</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">10</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>지적재산권</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">10</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>R&amp;D</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">10</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>보험/복지</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">10</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>차별대우</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">10</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>민간분쟁</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">10</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>생활여건</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">10</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>기타</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">10</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- <h3 class="tit1 mt25">처리현황 통계</h3>
+            <div class="tb-scroll-x">
+                <table class="tb_list">
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>전체</th>
+                            <th>답변완료</th>
+                            <th>답변대기</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">100 건</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">15 건</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">15 건</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> -->
+
+            <!-- <h3 class="tit1 mt25">비대면 화상상담 신청 통계</h3>
+            <div class="tb-scroll-x">
+                <table class="tb_list">
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>전체</th>
+                            <th>화상상담 신청</th>
+                            <th>화상상담 미신청</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">100 건</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">85 건</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">15 건</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> -->
+
+            <h3 class="tit1 mt25">홈닥터 분야별 통계</h3>
+            <div class="tb-scroll-x">
+                <table class="tb_list">
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">분야</th>
+                            <th colspan="3">성명1<br>(배정분야)</th>
+                            <th colspan="3">성명2<br>(배정분야)</th>
+                            <th colspan="3">성명3(퇴사)<br>(배정분야)</th>
+                        </tr>
+                        <tr>
+                            <th>접수</th>
+                            <th>답변</th>
+                            <th>미답변</th>
+                            <th>접수</th>
+                            <th>답변</th>
+                            <th>미답변</th>
+                            <th>접수</th>
+                            <th>답변</th>
+                            <th>미답변</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center">
+                            <td>전체</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">12</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">10</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">20</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">19</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">1</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">48</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">45</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>조세/세무</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>관세/무역</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">7</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>금융/외환</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">9</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">9</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>노사분규</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">4</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">9</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">5</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>노무인사</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">9</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>영업/유통/광고</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">9</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>비자/출입국</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">4</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>공장입지/신증설</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">1</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">7</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>건축/토지</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">1</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">4</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>전력/용수</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">5</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>전력/용수</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">5</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>도로/교통</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>투자 인센티브</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>투자제도/절차</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>기준/인증/검사</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">4</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>환경</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">3</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>지적재산권</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>R&amp;D</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>보험/복지</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">1</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>차별대우</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">2</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">6</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>민간분쟁</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">1</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>생활여건</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">5</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>기타</td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">1</a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue"></a></td>
+                            <td><a href="운영_옴부즈만_①고충상담신청_고충상담신청관리_목록.html" class="color-blue">8</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                
+
+        
+        </article>
+	</div>
+	<footer id="footer"></footer>
+</body>
+
+</html>

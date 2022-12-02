@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1240">
+	<title>Invest Korea</title>
+	<link rel="shortcut icon" href="../../images/cms/favicon.ico" media="all">
+	<link rel="stylesheet" type="text/css" href="../../css/cms/style.css" media="all">
+	<script src="../../js/cms/jquery-1.12.0.min.js"></script>
+	<script src="../../js/cms/calendar.js"></script>
+	<script src="../../js/cms/ui.js"></script>
+</head>
+
+<body id="user-admin" class="layout-page">
+	<header id="header"></header>
+	<div id="container">
+		<aside id="sidebar"></aside>
+        <article id="content">
+            <p id="page_loc">
+                <a href="#none" class="ico_home">HOME</a>
+                <span>&gt;</span>
+                <a href="#none">옴부즈만</a>
+                <span>&gt;</span> 
+                <a href="#none">규제입법정보</a>
+                <span>&gt;</span>
+                <strong>의원입법 관리</strong>
+            </p>
+    
+            <h2 id="tit_page">의원입법 관리</h2>
+            
+            <div class="search_area">
+                <table class="tb_search">
+                    <caption>의원입법관리 SEARCH</caption>
+                    <colgroup>
+                        <col style="width:12%">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>처리상태</th>
+                            <td>
+                                <input type="radio" name="radio1" id="radio1-1"><label for="radio1-1">전체</label>
+                                <input type="radio" name="radio1" id="radio1-2"><label for="radio1-2">시스템등록</label>
+                                <input type="radio" name="radio1" id="radio1-3"><label for="radio1-3">번역요청</label>
+                                <input type="radio" name="radio1" id="radio1-4"><label for="radio1-4">번역중</label>
+                                <input type="radio" name="radio1" id="radio1-5"><label for="radio1-5">번역승인요청</label>
+                                <input type="radio" name="radio1" id="radio1-6"><label for="radio1-6">보완요청</label>
+                                <input type="radio" name="radio1" id="radio1-7"><label for="radio1-7">최종검토완료</label>
+                                <input type="radio" name="radio1" id="radio1-8"><label for="radio1-8">최종검토수정</label>
+                                <input type="radio" name="radio1" id="radio1-9"><label for="radio1-9">완료(게시)</label>
+                                <input type="radio" name="radio1" id="radio1-10"><label for="radio1-10">완료(미게시)</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>기간검색</th>
+                            <td>
+                                <select id="subject" title="검색조건 선택" style="width:160px">
+									<option>검색조건 선택</option>
+								</select>
+                                <input type="text" id="srchFr" title="시작일" style="width:100px;">
+                                <a href="#divCalendar" class="btn_cal" onclick="openCalendar(document.getElementById('srchFr')); return false;">달력</a> ~
+                                <input type="text" id="srchTo" title="종료일" style="width:100px;">
+                                <a href="#divCalendar" class="btn_cal" onclick="openCalendar(document.getElementById('srchTo')); return false;">달력</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>안건명</th>
+                            <td>
+                                <input type="text" title="검색어" name="" id="" value="" placeholder="검색어를 입력해주세요" style="width:32%;">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                <div class="btn_area">
+                    <button type="submit" class="btn btn_lg act" id="btnSearch"><i class="fa fa-search"></i> 검색</button>
+                    <button type="reset" class="btn btn_lg" id="btnReset"><i class="fa fa-refresh"></i> 초기화</button>
+                </div>
+            </div>
+
+            <div class="list_status">
+                <p class="status">총 <strong class="colr_point">8</strong> 건 (1/1 page)</p>
+                <div class="fr">
+                    <select class="post_num" name="pageItm" id="pageItm">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                        <option value="50">50</option>
+                        <option value="60">60</option>
+                        <option value="70">70</option>               
+                        <option value="80">80</option>                             
+                        <option value="90">90</option>                                
+                        <option value="100">100</option>
+                    </select>
+                    <button type="button" class="btn" id="btnPageItm">적용</button>
+                </div>
+            </div>
+
+            <div class="tb-scroll-x">
+                <table class="tb_list">
+                <colgroup>
+                    <col style="width:80px">
+                    <col>
+                    <col style="width:30%">
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>입법번호</th>
+                        <th>제목</th>
+                        <th>소관부처</th>
+                        <th>시스템등록일</th>
+                        <th>입법예고일</th>
+                        <th>의견마감일</th>
+                        <th>게시여부</th>
+                        <th>처리상태</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="strong">3450</td>
+                        <td>0123456789</td>
+                        <td><a href="운영_옴부즈만_②규제입법정보_의원입법관리_상세.html">재활용지정사업자의 재활용 지침 일부개정안 (환경부고시)</a></td>
+                        <td>환경부</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td><span class="color-red bold">미게시</span></td>
+                        <td><span class="color-black bold">시스템등록</span></td>
+                    </tr>
+                    <tr>
+                        <td class="strong">3450</td>
+                        <td>0123456789</td>
+                        <td><a href="운영_옴부즈만_②규제입법정보_의원입법관리_상세.html">발명진흥법 시행령</a></td>
+                        <td>특허청</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td><span class="color-red bold">미게시</span></td>
+                        <td><span class="color-green bold">번역요청</span></td>
+                    </tr>
+                    <tr>
+                        <td class="strong">3450</td>
+                        <td>0123456789</td>
+                        <td><a href="운영_옴부즈만_②규제입법정보_의원입법관리_상세.html">전기용품 안전기준(KC 60745-2-6) 개정안</a></td>
+                        <td>특허청</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td><span class="color-red bold">미게시</span></td>
+                        <td><span class="color-orange bold">번역중</span></td>
+                    </tr>
+                    <tr>
+                        <td class="strong">3450</td>
+                        <td>0123456789</td>
+                        <td><a href="운영_옴부즈만_②규제입법정보_의원입법관리_상세.html">전기용품 안전기준(KC 60745-2-13) 개정안</a></td>
+                        <td>산업통상자원부</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td><span class="color-red bold">미게시</span></td>
+                        <td><span class="color-purple bold">번역승인요청</span></td>
+                    </tr>
+                    <tr>
+                        <td class="strong">3450</td>
+                        <td>0123456789</td>
+                        <td><a href="운영_옴부즈만_②규제입법정보_의원입법관리_상세.html">전기용품 안전기준(KC 60745-2-13) 개정안</a></td>
+                        <td>산업통상자원부</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td><span class="color-red bold">미게시</span></td>
+                        <td><span class="color-red bold">보완요청</span></td>
+                    </tr>
+                    <tr>
+                        <td class="strong">3450</td>
+                        <td>0123456789</td>
+                        <td><a href="운영_옴부즈만_②규제입법정보_의원입법관리_상세.html">전기용품 안전기준(KC 60745-2-13) 개정안</a></td>
+                        <td>산업통상자원부</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td><span class="color-red bold">미게시</span></td>
+                        <td><span class="color-blue bold">최종검토완료</span></td>
+                    </tr>
+                    <tr>
+                        <td class="strong">3450</td>
+                        <td>0123456789</td>
+                        <td><a href="운영_옴부즈만_②규제입법정보_의원입법관리_상세.html">택지개발촉진법 시행령</a></td>
+                        <td>국토교통부</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td><span class="color-black bold">게시</span></td>
+                        <td><span class="color-cyan bold">최종검토수정</span></td>
+                    </tr>
+                    <tr>
+                        <td class="strong">3450</td>
+                        <td>0123456789</td>
+                        <td><a href="운영_옴부즈만_②규제입법정보_의원입법관리_상세.html">택지개발촉진법 시행령</a></td>
+                        <td>국토교통부</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td><span class="color-red bold">미게시</span></td>
+                        <td><span class="color-black bold">완료(게시)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="strong">3450</td>
+                        <td>0123456789</td>
+                        <td><a href="운영_옴부즈만_②규제입법정보_의원입법관리_상세.html">택지개발촉진법 시행령</a></td>
+                        <td>국토교통부</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td><span class="color-red bold">미게시</span></td>
+                        <td><span class="color-black bold">완료(미게시)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="strong">3450</td>
+                        <td>0123456789</td>
+                        <td><a href="운영_옴부즈만_②규제입법정보_의원입법관리_상세.html">택지개발촉진법 시행령</a></td>
+                        <td>국토교통부</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td>2021-07-01</td>
+                        <td><span class="color-red bold">미게시</span></td>
+                        <td><span class="color-black bold">시스템등록</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+    
+            <div class="pagination">
+                <strong>1</strong>
+                <a href="?pageIndex=2&amp;searchStartDt=&amp;searchEndDt=&amp;searchKeyword=&amp;searchCondition=&amp;searchCl=&amp;pageItm=10">2</a>
+                <a href="?pageIndex=3&amp;searchStartDt=&amp;searchEndDt=&amp;searchKeyword=&amp;searchCondition=&amp;searchCl=&amp;pageItm=10">3</a> 
+            </div>
+            
+            <div class="btn_area">
+                <a href="운영_옴부즈만_②규제입법정보_정부입법관리_수정.html" class="btn btn_lg act" target="_blank"><i class="fa fa-pencil"></i> 등록</a>
+            </div>
+        
+        </article>
+	</div>
+	<footer id="footer"></footer>
+</body>
+
+</html>

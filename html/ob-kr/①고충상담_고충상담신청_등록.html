@@ -1,0 +1,547 @@
+<!doctype html>
+<!--[if IE 9 ]><html lang="ko" class="ie9"><![endif]-->
+<!--[if (gt IE 9)]><!--><html lang="ko"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1, minimum-scale=1, width=device-width">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="../../images/ob-kr/favicon.ico" media="all">
+    <link rel="stylesheet" href="../../css/ob-kr/common.css">
+    <link rel="stylesheet" href="../../css/ob-kr/sub.css">
+    <link rel="stylesheet" href="../../css/ob-common/jquery-ui.min.css">
+    <script src="../../js/ob-common/jquery-1.12.4.min.js"></script>
+    <script src="../../js/ob-common/jquery-ui.min.js"></script>
+    <!--[if IE 9 ]>
+    <script src="../../resources/ob-resources/placeholder.min.js"></script>
+    <![endif]-->
+    <script src="../../resources/ob-resources/jspdf.min.js"></script>
+    <script src="../../resources/ob-resources/html2canvas.min.js"></script>
+    <script src="../../resources/ob-resources/datepicker-ko.js"></script>
+    <script src="../../resources/ob-resources/es6-promise.auto.js"></script>
+    <script src="../../js/ob-common/resize.js"></script>
+    <script src="../../js/ob-kr/ui.js"></script>
+    <script src="../../js/ob-common/include.js"></script>
+	<title>등록 &lt; 고충상담신청 &lt; 고충상담 | 외국인투자옴부즈만</title>
+    <script>
+       function fn_pub(){
+            currentPage(1)
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- skip_navigation : [퍼블용 임시 include] -->
+    <div w3-include-html="inc/skip_nav.html"></div>
+    <!-- //개발 언어로 skip_navigation.html을 include 해주세요. --> 
+    
+    <div id="wrap">
+        <!-- header : [퍼블용 임시 include] -->
+		<div w3-include-html="inc/header.html"></div>
+		<!-- //개발 언어로 header.html을 include 해주세요. --> 
+    
+        <div id="content">
+            <div class="content_inner">
+               <!-- lnb : [퍼블용 임시 include] -->
+               <div w3-include-html="inc/lnb01.html"></div>
+               <!-- //개발 언어로 lnb.html을 include 해주세요. --> 
+
+                <!-- ctn -->
+                <div id="ctn">
+                    <div class="ctn_top">
+                       
+                        <h3 class="ctn_tit">고충상담신청</h3>
+
+                        <!-- location -->
+                        <div class="location">
+                            <ul>
+                                <li class="home"><span class="blind">홈</span></li>
+                                <li class="depth01">고충상담</li>
+                                <li class="depth02 on">고충상담신청</li>
+                            </ul>
+                        </div>
+                        <!-- // location -->
+
+                        <!-- sns : [퍼블용 임시 include] -->
+                        <div w3-include-html="inc/sns.html"></div>
+                        <!-- //개발 언어로 sns.html을 include 해주세요. --> 
+
+                    </div>
+
+                    <div class="intro_box">
+                        <strong>외국인투자옴부즈만은 외국인투자가 및 외국인투자기업의 애로사항 해결을 지원하고 있습니다.</strong>
+                        <div class="col_blue">※ 고충상담 신청 시 비대면 화상상담을 체크하시면 줌(Zoom)으로 상담 받으실 수 있습니다.</div>
+                        <ul class="list02">
+                            <li>고충상담 진행경과는 ‘고충상담 신청 현황’ 에서 확인 가능하며, SMS와 Email로도 안내 드립니다.</li>
+                            <li>상담신청 내용은 답변 전에 수정 또는 삭제 가능합니다.</li>
+                        </ul>
+                        <div class="info">
+                            <span class="tel"><span class="bold">문의전화 : </span>02)3497-1825</span>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h4 class="sec_tit mb_txt">고충상담 기본정보</h4>
+                        <div class="intro_margin col_blue">※ 고충상담처리와 진행경과 관리를 위해 반드시 필요한 정보이니 정확한 정보를 입력해주세요.</div>
+                        <div class="board_tbl_box write w_level02">
+                            <div class="row">
+                                <div class="div_th">기업명 <span class="important">*</span></div>
+                                <div class="div_td inp_td">
+                                    <input type="text" title="기업명 입력창" class="full">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="div_th">사업자등록번호 <span class="important">*</span></div>
+                                <div class="div_td inp_td">
+                                    <div class="td_form01">
+                                        <div class="half">
+                                            <input type="text" title="사업자등록번호 입력창">
+                                            <div class="btn_box">
+                                                <a href="#n" class="btn bg_blue">유효성 확인</a>
+                                            </div>
+                                        </div>
+                                        <div>(‘-’ 를 제외하고 숫자만 입력해 주세요.)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="div_th">담당자명 <span class="important">*</span></div>
+                                <div class="div_td inp_td">
+                                    <input type="text" title="담당자명 입력창">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="div_th">회사 전화번호 <span class="important">*</span></div>
+                                <div class="div_td inp_td">
+                                    <input type="text" title="회사 전화번호 입력창">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="div_th">휴대 전화번호 <span class="important">*</span></div>
+                                <div class="div_td inp_td">
+                                    <div class="td_form01">
+                                        <input type="text" title="휴대 전화번호 입력창">
+                                        <div>(ex: 010-000-0000)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="div_th">E-mail <span class="important">*</span></div>
+                                <div class="div_td">
+                                    leehee43@naver.com
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="div_th">진행경과 수신여부 <span class="important">*</span></div>
+                                <div class="div_td inp_td">
+                                    <div class="rd_wrap">
+                                        <span class="rd_box">
+                                            <input type="radio" id="rd30" class="blind" name="radio3" checked>
+                                            <label for="rd30">전체</label>
+                                        </span>
+                                        <span class="rd_box">
+                                            <input type="radio" id="rd31" class="blind" name="radio3">
+                                            <label for="rd31">SMS</label>
+                                        </span>
+                                        <span class="rd_box">
+                                            <input type="radio" id="rd32" class="blind" name="radio3">
+                                            <label for="rd32">E-MAIL</label>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="div_th">비밀번호 <span class="important">*</span></div>
+                                <div class="div_td inp_td">
+                                    <div class="td_form01">
+                                        <input type="password" title="비밀번호 입력창">
+                                        <div>(고충상담신청 현황 관리 시 반드시 필요 하오니 기억해주세요)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="div_th">비밀번호 확인 <span class="important">*</span></div>
+                                <div class="div_td inp_td">
+                                    <input type="password" title="비밀번호 확인 입력창">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h4 class="sec_tit">고충상담 신청정보</h4>
+                        <div class="board_tbl_box write w_level02">
+                            <div class="row">
+                                <div class="div_th">고충상담분야 <span class="important">*</span></div>
+                                <div class="div_td inp_td_m">
+                                    <div class="m_content">
+                                        <select name="" id="" title="고충상담분야 선택" class="full">
+                                            <option value="">조세/세무</option>
+                                            <option value="">관세/무역</option>
+                                            <option value="">금융/외환</option>
+                                            <option value="">노사분규</option>
+                                            <option value="">노무/인사</option>
+                                            <option value="">영업/유통/광고</option>
+                                            <option value="">비자/출입국</option>
+                                            <option value="">공장입지/신증설</option>
+                                            <option value="">건축/토지</option>
+                                            <option value="">전력/용수</option>
+                                            <option value="">도로/교통</option>
+                                            <option value="">투자 인센티브 </option>
+                                            <option value="">투자제도/절차</option>
+                                            <option value="">기준/인증/검사</option>
+                                            <option value="">환경</option>
+                                            <option value="">지적재산권</option>
+                                            <option value="">R&D</option>
+                                            <option value="">보험/복지</option>
+                                            <option value="">차별대우</option>
+                                            <option value="">민간분쟁</option>
+                                            <option value="">생활여건</option>
+                                            <option value="">기타</option>
+                                        </select>
+                                    </div>
+                                    <div class="rd_wrap pc_content mb0">
+                                        <div class="row">
+                                            <div class="option">
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd1" class="blind" name="radio1" checked>
+                                                    <label for="rd1">조세/세무</label>
+                                                </span>
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd2" class="blind" name="radio1">
+                                                    <label for="rd2">관세/무역</label>
+                                                </span>
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd3" class="blind" name="radio1">
+                                                    <label for="rd3">금융/외환</label>
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd4" class="blind" name="radio1">
+                                                    <label for="rd4">노사분규</label>
+                                                </span>
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd5" class="blind" name="radio1">
+                                                    <label for="rd5">노무/인사</label>
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd6" class="blind" name="radio1">
+                                                    <label for="rd6">영업/유통/광고</label>
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd7" class="blind" name="radio1">
+                                                    <label for="rd7">비자/출입국</label>
+                                                </span>
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd8" class="blind" name="radio1">
+                                                    <label for="rd8">공장입지/신증설</label>
+                                                </span>
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd9" class="blind" name="radio1">
+                                                    <label for="rd9">건축/토지</label>
+                                                </span>
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd10" class="blind" name="radio1">
+                                                    <label for="rd10">전력/용수</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="option">
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd11" class="blind" name="radio1">
+                                                    <label for="rd11">도로/교통</label>
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd12" class="blind" name="radio1">
+                                                    <label for="rd12">투자 인센티브</label>
+                                                </span>
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd13" class="blind" name="radio1">
+                                                    <label for="rd13">투자제도/절차</label>
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd14" class="blind" name="radio1">
+                                                    <label for="rd14">기준/인증/검사</label>
+                                                </span>
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd15" class="blind" name="radio1">
+                                                    <label for="rd15">환경</label>
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd16" class="blind" name="radio1">
+                                                    <label for="rd16">지적재산권</label>
+                                                </span>
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd17" class="blind" name="radio1">
+                                                    <label for="rd17">R&D</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="option">
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd18" class="blind" name="radio1">
+                                                    <label for="rd18">보험/복지</label>
+                                                </span>
+                                            </div>
+                                            <div class="option b-r-none">
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd19" class="blind" name="radio1">
+                                                    <label for="rd19">차별대우</label>
+                                                </span>
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd20" class="blind" name="radio1">
+                                                    <label for="rd20">민간분쟁</label>
+                                                </span>
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd21" class="blind" name="radio1">
+                                                    <label for="rd21">생활여건</label>
+                                                </span>
+                                                <span class="rd_box">
+                                                    <input type="radio" id="rd22" class="blind" name="radio1">
+                                                    <label for="rd22">기타</label>
+                                                </span>
+                                            </div>
+                                            <div class="option b-r-none"></div>
+                                            <div class="option b-r-none"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="div_th">고충 제목 <span class="important">*</span></div>
+                                <div class="div_td inp_td">
+                                    <input type="text" class="full" title="고충 제목 입력창">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="div_th">고충 내용 <span class="important">*</span></div>
+                                <div class="div_td inp_td">
+                                    <div class="ref">
+                                        ※작성 시 유의사항<br>
+                                        [발생배경 / 애로사항 / 현황 및 요청사항] 형식에 맞춰 작성해주시기 바랍니다.
+                                    </div>
+                                    <textarea name="" id="" cols="30" rows="10" class="full" title="고충 내용 입력창"></textarea>
+                                </div>
+                            </div>
+                            <!-- <div class="row">
+                                <div class="div_th">고충 접수 양식</div>
+                                <div class="div_td">
+                                    원활한 고충처리를 위해 첨부된 양식으로 제출하여 주시면 감사하겠습니다.
+                                    <div class="btn_box pc_ml6">
+                                        <a href="#n" class="btn bg_navy normal down ">양식 다운로드</a>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="row">
+                                <div class="div_th">첨부파일</div>
+                                <div class="div_td">
+                                    <strong class="st">
+                                        개인정보 보호를 위해 [첨부파일]에 개인신상정보(주민번호, 전화번호 등)가 포함되 등록되지 않도록 유의하여 주시기 바랍니다.
+                                    </strong>
+                                    <div class="ref">※ 내용은 2000자 까지, 첨부파일 업로드 용량은 최대 10MB까지 가능합니다.</div>
+                                    <div class="attach">
+                                        <input type="file" title="파일 선택하기">
+                                        <ul class="list_attachment">
+                                            <li>
+                                                <span class="name">이미 첨부한 첨부파일명.PDF</span>
+                                                <a href="#n" class="download">[다운로드]</a>
+                                                <button type="button" class="del">[삭제]</button>
+                                            </li>
+                                            <li>
+                                                <span class="name">이미 첨부한 첨부파일명.PDF</span>
+                                                <a href="#n" class="download">[다운로드]</a>
+                                                <button type="button" class="del">[삭제]</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h4 class="sec_tit mb_txt">비대면 화상상담 희망 신청</h4>
+                        <div class="intro_margin col_blue">※ 비대면 화상상담을 신청하시면 줌(Zoom)을 통해 홈닥터와의 상담이 가능합니다.</div>
+                        <div class="board_tbl_box write w_level03">
+                            <div class="row">
+                                <div class="div_th">신청여부 및 상담 희망일1</div>
+                                <div class="div_td inp_td">
+                                    <div class="rd_wrap">
+                                        <span class="rd_box">
+                                            <input type="radio" id="rd11" class="blind" name="radio2" checked>
+                                            <label for="rd11">방문상담</label>
+                                        </span>
+                                        <span class="rd_box application">
+                                            <input type="radio" id="rd12" class="blind" name="radio2">
+                                            <label for="rd12">화상상담</label>
+                                            <span class="hope">
+                                                (화상상담 희망일 : 
+                                                <span class="datepicker_box">
+                                                    <input type="text" class="datepicker" title="상담 희망일 날짜 선택하기">
+                                                </span>
+                                                )
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="div_th">신청여부 및 상담 희망일2</div>
+                                <div class="div_td inp_td">
+                                    <div class="rd_wrap">
+                                        <span class="rd_box">
+                                            <input type="radio" id="rd20" class="blind" name="radio3" checked>
+                                            <label for="rd20">방문상담</label>
+                                        </span>
+                                        <span class="rd_box application">
+                                            <input type="radio" id="rd21" class="blind" name="radio3">
+                                            <label for="rd21">화상상담</label>
+                                            <span class="hope">
+                                                (화상상담 희망일 : 
+                                                <span class="datepicker_box">
+                                                    <input type="text" class="datepicker" title="상담 희망일 날짜 선택하기">
+                                                </span>
+                                                )
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="section">
+                        <h4 class="sec_tit">개인정보 수집 및 이용에 대한 안내</h4>
+                        <div class="agree_box">
+                            <div class="top">
+                                <ul class="list01">
+                                    <li>
+                                        <span class="bold">수집 항목 : </span>
+                                        성명, 휴대전화, 이메일 및 그 외 개인이 직접 입력한 내용
+                                    </li>
+                                    <li>
+                                        <span class="bold">수집 목적 : </span>
+                                        고충상담 신고접수 및 결과 회신
+                                    </li>
+                                    <li>
+                                        <span class="bold">보유 기간 : </span>
+                                        수집된 정보는 별도의 삭제요청이 없는 한 「공공기록물법 시행령」 에 따라 (준)영구보존 됩니다.
+                                    </li>
+                                    <li>
+                                        귀하는 위 항목의 개인정보 수집·이용에 동의를 거부할 권리가 있습니다.
+                                    </li>
+                                    <li>그러나 동의를 거부할 경우 규제애로 신고 시 상담 및 결과 회신에 제한을 받을 수 있습니다.</li>
+                                </ul>
+                            </div>
+                            <div class="bottom">
+                                <strong>위와 같이 개인정보를 수집 이용하는 데 동의하십니까?</strong>
+                                <div class="rd_wrap">
+                                    <span class="rd_box">
+                                        <input type="radio" id="rd20" class="blind" name="radio4" checked>
+                                        <label for="rd20">동의함</label>
+                                    </span>
+                                    <span class="rd_box">
+                                        <input type="radio" id="rd21" class="blind" name="radio4">
+                                        <label for="rd21">동의안함</label>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    <div class="section">
+                        <h4 class="sec_tit mb_txt">추가입력사항</h4>
+                        <div class="intro_margin col_blue">※ 추가정보를 알고 계신 고객님께서는 아래의 정보를 입력해주시기 바랍니다.</div>
+                        <div class="board_tbl_box write w_level02">
+                            <div class="row">
+                                <div class="div_th">관련규정</div>
+                                <div class="div_td inp_td">
+                                    <input type="text" title="관련규정 입력창" class="full">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="div_th">소관부서</div>
+                                <div class="div_td inp_td">
+                                    <input type="text" title="소관부서 입력창">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="div_th">담당자</div>
+                                <div class="div_td inp_td">
+                                    <input type="text" title="담당자 입력창">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="div_th">직책</div>
+                                <div class="div_td inp_td">
+                                    <input type="text" title="직책 입력창">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="div_th">연락처</div>
+                                <div class="div_td inp_td">
+                                    <input type="text" title="연락처 입력창">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="div_th">기타 요청사항</div>
+                                <div class="div_td inp_td">
+                                    <input type="text" title="기타 요청사항 입력창" class="full">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn_box txt_r">
+                        <a href="#n" class="btn bg_blue bold big" onclick="fn_open_popup('application')">신청</a>
+                        <a href="#n" class="btn bg_d_gr bold big">취소</a>
+                    </div>
+
+                    <div class="popup_wrap type02 bg01 txt_c" data-popup="application" tabindex="0">
+                        <div class="popup_box">
+                            <div class="top">
+                                <div class="tit">고충상담 신청완료</div>
+                            </div>
+                            <div class="bottom">
+                                <div class="msg_box">
+                                    <div class="strong">고충상담신청이 완료되었습니다.</div>
+                                    <ul class="list">
+                                        <li>- 신청하신 내용은 선택하신 방법으로 진행경과를 안내해드립니다.</li>
+                                        <li>- 진행현황은 “고충상담신청 현황” 에서 확인하실 수 있습니다.</li>
+                                        <li>- 답변 전의 상담신청 건은 수정 또는 삭제하실 수 있습니다.</li>
+                                    </ul>
+                                </div>
+                                <div class="btn_box">
+                                    <a href="①고충상담_나의신청내역.html" class="btn bg_blue big">고충상담 진행현황</a>
+                                    <a href="#n" class="btn bg_d_gr big" onclick="fn_hide_popup('application');">닫기</a>
+                                </div>
+                            </div>
+                            <button class="btn_close_pop" type="button" onclick="fn_hide_popup('application');"><span class="blind">팝업닫기</span></button>
+                        </div>
+                    </div>
+
+                   
+                </div>
+                <!-- // ctn -->
+            </div>
+
+            <!-- footer : [퍼블용 임시 include] -->
+            <div w3-include-html="inc/footer.html"></div>
+            <!-- //개발 언어로 footer.html을 include 해주세요. --> 
+        </div>
+    </div>
+</body>
